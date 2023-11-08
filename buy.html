@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+         <title>Английская фильмотека</title>
+            <link rel="stylesheet" href="style.html">
+</head>
+<body>
+    <nav>
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О нас</a></li>
+          <li><a href="contact.html">Сявязь с нами</a></li>
+          <li><a href="genre.html">Поиск фильмов</a></li>
+          <li><a href="buy.html">Купить наши курсы</a></li>
+        </ul>
+      </nav>
+    <section id="contact">
+        <h2>Контактная форма</h2>
+        <form action="submit_original_data.php" method="POST">
+            <label for="order">Заказ:</label>
+            <input type="text" id="order" name="order" required><br>
+    <br>
+            <label for="review">Отзыв:</label>
+            <textarea id="review" name="review" required></textarea><br>
+    <br>
+            <label for="rating">Уровень знания Английского</label>
+            <input type="radio" id="rating1" name="rating" value="1" required>
+            <label for="rating1">A1</label>
+            <input type="radio" id="rating2" name="rating" value="2" required>
+            <label for="rating2">A2</label>
+            <input type="radio" id="rating3" name="rating" value="3" required>
+            <label for="rating3">B1</label><br>
+            <input type="radio" id="rating4" name="rating" value="4" required>
+            <label for="rating4">B2</label>
+            <input type="radio" id="rating5" name="rating" value="5" required>
+            <label for="rating5">C1</label>
+            <input type="radio" id="rating6" name="rating" value="6" required>
+            <label for="rating6">C2</label>
+            <input type="hidden" name="date" value="<?php echo date('Y-m-d'); ?>">
+            <input type="submit" value="Отправить">
+        </form>
+    </section>
+<br>
+<br>
+<img src="https://psv4.userapi.com/c909628/u228964083/docs/d39/c4eb76efbffc/Design_3.png?extra=XsAt8nhSJb6_IfXltFH1CgnGCjUTapv_6dWkvvV7_97JdujgvM4el6Fjza0yDCvVGGtuq68OZ7bPtr3GFjF6mlb7Mzn8dqG85pLxBa4Xis6t_0X0j-3TATc9Om_lHXatd9EQTVhhXIE3aDx3_llKuA.jpg" alt="CEFR">
+<footer>
+  <p>© 2023 Английская фильмотека. Все права защищены.</p>
+</footer>
+</body>
+</html>
